@@ -15,10 +15,10 @@ class SellerAccountActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnCreateStore.setOnClickListener{
-           // startActivity(Intent(this, CreateStoreActivity::class.java))
+            startActivity(Intent(this, CreateStoreActivity::class.java))
         }
         binding.btnVisitStore.setOnClickListener{
-           // startActivity(Intent(this, YourStoreActivity::class.java))
+            startActivity(Intent(this, YourStoreActivity::class.java))
         }
     }
 }

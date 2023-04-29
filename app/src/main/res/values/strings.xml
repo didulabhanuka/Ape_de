@@ -38,4 +38,14 @@
     <string name="create_your_own_store">Create Your Own Store</string>
     <string name="our_aim">"<b>Our aim</b> is to empower local entrepreneurs by providing them with the tools and resources they need to start and grow their businesses from the comfort of their homes."</string>
     <string name="visit_store">Visit Your Own Store</string>
+
+    //Create Store page
+    <string name="create_store">CREATE STORE</string>
+    <string name="shop_name">Your Shop Name</string>
+    <string name="address">Shop Address</string>
+    <string name="phone">Contact Number</string>
+    <string name="description">Shop Description</string>
+    <string name="category">Shop Category</string>
+    <string name="btn_create">CREATE</string>
+
 </resources>

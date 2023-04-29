@@ -15,5 +15,11 @@
     <dimen name="register_btn" />
     <dimen name="hello_seller">36sp</dimen>
     <dimen name="create_your_store">14sp</dimen>
-
+    <dimen name="ransalau_header">24sp</dimen>
+    <dimen name="address">14sp</dimen>
+    <dimen name="edit_btn1">14sp</dimen>
+    <dimen name="product_name">14sp</dimen>
+    <dimen name="add_item_btn">14sp</dimen>
+    <dimen name="update_btn">14sp</dimen>
+    <dimen name="delete_btn">14sp</dimen>
 </resources>
