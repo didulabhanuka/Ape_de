@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#CAB1D8"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="166dp"
+        android:layout_height="116dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/download" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:text="Laveena Cotton Bathik Saree"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Orange with Black"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="LKR 29,000.00"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="#FFFFFF"
+        android:text="Pure Soft Cotton Saree with Blouse piece.Normal hand wash.Elegent to both office and casual wear"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="166dp"
+        android:layout_height="116dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/oip" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:text="Handloom Cotton Sarong"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Dark Green with Gray"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="LKR 39,000.00"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="390dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:background="#FFFFFF"
+        android:text="If you’re going for minimalist, yet smart, this is the sarong for you!"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="UPDATE"
+        android:textAlignment="center"
+        android:textSize="@dimen/updateBtn" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:text="DELETE"
+        android:textAlignment="center"
+        android:textSize="@dimen/deleteBtn1" />
+
+</LinearLayout>

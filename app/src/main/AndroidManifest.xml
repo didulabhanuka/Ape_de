@@ -12,6 +12,18 @@
         android:theme="@style/Theme.APEDE"
         tools:targetApi="31">
         <activity
+            android:name=".ViewShopItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SellarUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SellarDeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".SellerAccountActivity"
             android:exported="false" />
         <activity

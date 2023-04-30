@@ -15,5 +15,26 @@
     <dimen name="register_btn" />
     <dimen name="hello_seller">36sp</dimen>
     <dimen name="create_your_store">14sp</dimen>
+    <dimen name="addHeader">24sp</dimen>
+    <dimen name="category">14sp</dimen>
+    <dimen name="batik">14sp</dimen>
+    <dimen name="handcraft">14sp</dimen>
+    <dimen name="batikItem1">14sp</dimen>
+    <dimen name="batikItem2">14sp</dimen>
+    <dimen name="ItemPhoto">14sp</dimen>
+    <dimen name="itemName">14sp</dimen>
+    <dimen name="itemColour">14sp</dimen>
+    <dimen name="itemPrice">14sp</dimen>
+    <dimen name="itemDescription">14sp</dimen>
+    <dimen name="addBtn">14sp</dimen>
+    <dimen name="storeNameHeader">24sp</dimen>
+    <dimen name="updateBtn">14sp</dimen>
+    <dimen name="deleteBtn">14sp</dimen>
+    <dimen name="updateItemHeader">24sp</dimen>
+    <dimen name="deleteItemHeader">24sp</dimen>
+    <dimen name="deleteMessage">14sp</dimen>
+    <dimen name="cancelBtn">14sp</dimen>
+    <dimen name="deleteBtn1">14sp</dimen>
+
 
 </resources>
