@@ -14,11 +14,12 @@ class HelloUserActivity : AppCompatActivity() {
         binding = ActivityHelloUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnRegister.setOnClickListener {
+            startActivity(Intent(this, RegisterationPageActivity::class.java))
+        }
+
         binding.btnLogin.setOnClickListener{
             startActivity(Intent(this, LoginPageActivity::class.java))
-        }
-        binding.btnRegister.setOnClickListener{
-            startActivity(Intent(this,RegisterationPageActivity::class.java))
         }
     }
 }
