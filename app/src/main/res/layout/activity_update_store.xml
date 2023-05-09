@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_shop_name"
+        android:id="@+id/tilShopName"
         style="@style/TextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_shop_name"
+            android:id="@+id/etShopName"
             style="@style/TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -50,7 +50,7 @@
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_shop_name">
+        app:layout_constraintTop_toBottomOf="@+id/tilShopName">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_address"
@@ -61,7 +61,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_phone"
+        android:id="@+id/tilPhone"
         style="@style/TextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/til_address">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_phone"
+            android:id="@+id/etPhone"
             style="@style/TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -90,7 +90,7 @@
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_shop_name">
+        app:layout_constraintTop_toBottomOf="@+id/tilShopName">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_des"
@@ -101,7 +101,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_description"
+        android:id="@+id/tilDescription"
         style="@style/TextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -109,10 +109,10 @@
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_phone">
+        app:layout_constraintTop_toBottomOf="@+id/tilPhone">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_description"
+            android:id="@+id/etDescription"
             style="@style/TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -127,7 +127,7 @@
         android:hint="@string/category"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_description">
+        app:layout_constraintTop_toBottomOf="@+id/tilDescription">
 
         <AutoCompleteTextView
             android:id="@+id/dropdown_menu"
