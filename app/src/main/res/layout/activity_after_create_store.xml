@@ -1,57 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AfterCreateStoreActivity"
-    android:background="@color/primary_color"
-    android:orientation="vertical">
+    android:background="@color/primary_color">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
+        android:id="@+id/emp_storeNameDetails"
         android:layout_width="match_parent"
-        android:layout_height="59dp"
-        android:background="#7B4FCA"
-        android:text="Ransalu Bathik Store"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_marginTop="50dp"
-        android:text="                  Shop Address - 35/A,Kandy Road,Malabe"
-        android:textColor="#9C27B0"
-        android:textStyle="italic" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_background"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/emp_storeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/emp_storeAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/emp_storeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/emp_storeNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/emp_addItemsBtn"
+        android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:text="                           Contact Number - 0772341454"
-        android:textColor="#9C27B0"
-        android:textStyle="italic"/>
-
-    <Button
-        android:id="@+id/delete_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="@color/white"
-        android:text="ADD IEM"
+        android:text="ADD ITEM"
         android:textColor="#7030E3"
-        android:textSize="@dimen/add_item_btn" />
+        android:textSize="@dimen/add_item_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/empty_editstore"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:id="@+id/emp_editStoreBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="10dp"
         android:backgroundTint="#7030E3"
-        android:text="EDIT STORE" />
+        android:text="EDIT STORE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/delete_button"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,7 @@
             android:name=".YourStoreActivity"
             android:exported="false" />
         <activity
-            android:name=".CreateStoreActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".SellerAccountActivity"
@@ -42,7 +42,7 @@
             android:name=".HelloUserActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CreateStoreActivity"
             android:exported="true">
 
             <intent-filter>
