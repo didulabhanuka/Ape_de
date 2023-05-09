@@ -5,6 +5,5 @@ data class StoreModel(
     var storeAddress: String? = null,
     var storePhone: String? = null,
     var storeDesc: String? = null,
-    var storeCat: String? = null,
-    var storeImg: String? = ""
+    var storeCat: String? = null
 )

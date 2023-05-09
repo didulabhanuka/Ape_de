@@ -31,10 +31,11 @@
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:startIconDrawable="@drawable/baseline_home_work_24">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etShopName"
+            android:id="@+id/updateShopName"
             style="@style/TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -50,10 +51,11 @@
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilShopName">
+        app:layout_constraintTop_toBottomOf="@+id/tilShopName"
+        app:startIconDrawable="@drawable/baseline_add_location_alt_24">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_address"
+            android:id="@+id/updateAddress"
             style="@style/TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
@@ -71,29 +73,11 @@
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_address">
+        app:layout_constraintTop_toBottomOf="@+id/til_address"
+        app:startIconDrawable="@drawable/baseline_perm_phone_msg_24">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etPhone"
-            style="@style/TextInputLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_"
-        style="@style/TextInputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/address"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilShopName">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_des"
+            android:id="@+id/updatePhone"
             style="@style/TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -109,10 +93,11 @@
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilPhone">
+        app:layout_constraintTop_toBottomOf="@+id/tilPhone"
+        app:startIconDrawable="@drawable/baseline_edit_note_24">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etDescription"
+            android:id="@+id/updateDescription"
             style="@style/TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -127,10 +112,11 @@
         android:hint="@string/category"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilDescription">
+        app:layout_constraintTop_toBottomOf="@+id/tilDescription"
+        app:startIconDrawable="@drawable/baseline_category_24">
 
         <AutoCompleteTextView
-            android:id="@+id/dropdown_menu"
+            android:id="@+id/upCategory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="none"
@@ -138,7 +124,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/update_store"
+        android:id="@+id/updateStoreBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"

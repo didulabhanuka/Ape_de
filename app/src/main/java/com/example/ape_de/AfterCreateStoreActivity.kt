@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.example.ape_de.databinding.ActivityAfterCreateStoreBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -53,10 +54,41 @@ class AfterCreateStoreActivity : AppCompatActivity() {
         }
 
         empEditBtn.setOnClickListener {
-            val intent = Intent(this, UpdateStoreActivity::class.java)
-            intent.putExtra("storeName",  storeId)
-            startActivity(intent)
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Choose an option")
+            builder.setMessage("Do you want to update or delete the store?")
+
+            builder.setPositiveButton("Update") { dialog, which ->
+                val intent = Intent(this, UpdateStoreActivity::class.java)
+                intent.putExtra("storeName",  storeId)
+                startActivity(intent)
+            }
+
+            builder.setNegativeButton("Delete") { dialog, which ->
+                val deleteBuilder = AlertDialog.Builder(this)
+                deleteBuilder.setTitle("Delete store")
+                deleteBuilder.setMessage("Are you sure you want to delete this store?")
+
+                deleteBuilder.setPositiveButton("Yes") { dialog, which ->
+                    // Delete the store from the database
+                    dbReference.child(storeId).removeValue().addOnSuccessListener {
+                        Toast.makeText(this, "Store deleted successfully", Toast.LENGTH_SHORT).show()
+                        finish()
+                    }.addOnFailureListener { err ->
+                        Toast.makeText(this, "Failed to delete store. Error: ${err.message}", Toast.LENGTH_SHORT).show()
+                    }
+                }
+
+                deleteBuilder.setNegativeButton("No") { dialog, which ->
+                    dialog.dismiss()
+                }
+
+                deleteBuilder.create().show()
+            }
+
+            builder.create().show()
         }
+
 
     }
 }

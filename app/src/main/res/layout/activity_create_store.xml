@@ -32,7 +32,8 @@
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:startIconDrawable="@drawable/baseline_home_work_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etShopName"
@@ -51,7 +52,8 @@
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilShopName">
+        app:layout_constraintTop_toBottomOf="@+id/tilShopName"
+        app:startIconDrawable="@drawable/baseline_add_location_alt_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etAddress"
@@ -72,7 +74,8 @@
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilAddress">
+        app:layout_constraintTop_toBottomOf="@+id/tilAddress"
+        app:startIconDrawable="@drawable/baseline_perm_phone_msg_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPhone"
@@ -92,7 +95,8 @@
         android:backgroundTint="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilPhone">
+        app:layout_constraintTop_toBottomOf="@+id/tilPhone"
+        app:startIconDrawable="@drawable/baseline_edit_note_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etDescription"
@@ -110,7 +114,8 @@
         android:hint="@string/category"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilDescription">
+        app:layout_constraintTop_toBottomOf="@+id/tilDescription"
+        app:startIconDrawable="@drawable/baseline_category_24">
 
         <AutoCompleteTextView
             android:id="@+id/etCategory"
